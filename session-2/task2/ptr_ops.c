@@ -13,11 +13,16 @@ int main( void ) {
 
     testFloatPtr = &testFloat;  // the float pointer (testFloatPtr) is set to the address of the float variable (testFloat)
     
-    printf("The value of the float variable is  %f\n",testFloat);
+    printf("float *testFloatPtr;%f\n",testFloat);
     printf("The address of the float variable is  %p\n",&testFloat);
 
     printf("The value of the pointer is  %p\n",testFloatPtr);
     printf("The value that the pointer dereferences to is  %f\n",*testFloatPtr);
 
+    double testDouble = 3.14;
+    float *testDoublePtr;
+
+    printf("double *testDoublePtr;%d\n",testDouble);
+    printf("The address of the double variable is  %p\n",&testDouble);
     return 0;
 }
