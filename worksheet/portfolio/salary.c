@@ -10,13 +10,13 @@
  int main( void ) {
 
     // define and initialise variables for the problem data 
-    int salary = 24000;
+    int salary = 36250;
     float NI = 0.08;
     float tax_rate = 0.2;
 
     // calculate the deductions and final take-home salary
     float NI_deduction = salary * NI;
-    float tax_deduction = (salary - 12500)  * tax_rate;
+    float tax_deduction = ((salary-NI_deduction) - 12500)  * tax_rate;
     float take_away_salary = salary - NI_deduction - tax_deduction;
 
     // Use only these print statement with appropriate formatting and variable names
